@@ -27,7 +27,8 @@
     "siteFonts": [],
     "uniqCompNum": 7,
     "versionPublish": "4.10.5",
-    "screenshot": "screenshot.png"
+    "publishType": "local",
+    "publishPath": "file:///Users/bendespain/Documents"
   },
   "pages": {
     "index.html": {
