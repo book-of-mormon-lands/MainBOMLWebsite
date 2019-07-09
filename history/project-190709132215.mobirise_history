@@ -27,6 +27,8 @@
     "siteFonts": [],
     "uniqCompNum": 7,
     "versionPublish": "4.10.5",
+    "publishType": "local",
+    "publishPath": "file:///Users/bendespain/BOMLands/MainBOMLWebsite",
     "screenshot": "screenshot.png"
   },
   "pages": {
