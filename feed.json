@@ -1,0 +1,27 @@
+{
+    "version": "https://jsonfeed.org/version/1",
+    "title": "Book of Mormon Lands",
+    "description": "",
+    "home_page_url": "http://bookofmormonlands.net/test",
+    "feed_url": "http://bookofmormonlands.net/test/feed.json",
+    "user_comment": "",
+    "author": {
+        "name": "Robert Roylance"
+    },
+    "items": [
+        {
+            "id": "http://bookofmormonlands.net/test/testing.html",
+            "url": "http://bookofmormonlands.net/test/testing.html",
+            "title": "testing",
+            "summary": "this is where I add stuff",
+            "content_html": "this is where I add stuff",
+            "author": {
+                "name": "Robert Roylance"
+            },
+            "tags": [
+            ],
+            "date_published": "2019-07-23T14:26:46-06:00",
+            "date_modified": "2019-07-23T14:26:46-06:00"
+        }
+    ]
+}
