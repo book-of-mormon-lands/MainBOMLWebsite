@@ -1,0 +1,623 @@
+<!DOCTYPE HTML>
+<html xmlns="http://www.w3.org/1999/xhtml" dir="ltr" lang="en">
+ <head>
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+  <meta name="generator" content="openElement (1.57.9)" />
+  <link id="openElement" rel="stylesheet" type="text/css" href="../WEFiles/Css/v02/openElement.css?v=50491098000" />
+  <link id="siteFonts" rel="stylesheet" type="text/css" href="../Files/Fonts/Fonts.css?v=50491098000" />
+  <link id="OETemplate1" rel="stylesheet" type="text/css" href="loading.css?v=50491098000" />
+  <link id="OETemplate2" rel="stylesheet" type="text/css" href="basecalque.css?v=50491098000" />
+  <link id="OEBase" rel="stylesheet" type="text/css" href="Base.css?v=50491098000" />
+  <link rel="stylesheet" type="text/css" href="../WEFiles/Css/WEMenu-v23.css?v=50491098000" />
+  <!--[if lte IE 7]>
+  <link rel="stylesheet" type="text/css" href="../WEFiles/Css/ie7.css?v=50491098000" />
+  <![endif]-->
+  <script type="text/javascript">
+   var WEInfoPage = {"PHPVersion":"phpOK","OEVersion":"1-57-9","PagePath":"Templates/Base","Culture":"DEFAULT","LanguageCode":"EN","RelativePath":"../","RenderMode":"Export","PageAssociatePath":"Templates/Base","EditorTexts":null};
+  </script>
+  <script type="text/javascript" src="../WEFiles/Client/jQuery/1.10.2.js?v=50491098000"></script>
+  <script type="text/javascript" src="../WEFiles/Client/jQuery/migrate.js?v=50491098000"></script>
+  <script type="text/javascript" src="../WEFiles/Client/Common/oe.min.js?v=50491098000"></script>
+  <script type="text/javascript" src="Base(var).js?v=50491098000"></script>
+  <script type="text/javascript" src="../WEFiles/EG/EGdfb2de80/Js/ScrollTo-v9.js?v=50491098000"></script>
+  <script type="text/javascript" src="../WEFiles/Client/WEMenu-v23.js?v=50491098000"></script>
+  <style id="OEScriptManager" type="text/css">
+   body {
+       overflow: hidden;
+   }
+   
+   /* Preloader */
+   
+   #preloader {
+       position:fixed;
+       top:0;
+       left:0;
+       right:0;
+       bottom:0;
+       background-color:#fff; /* change if the mask should have another color then white */
+       z-index:9999999; /* makes sure it stays on top */
+   }
+   
+   #status {
+       width:400px;
+       height:300px;
+       margin:-200px 0 0 -200px; /* is width and height divided by two */
+       position:absolute;
+       left:50%; /* centers the loading animation horizontally one the screen */
+       top:50%; /* centers the loading animation vertically one the screen */
+       background-image:url(Files/Image/preloader.gif); /* path to your loading animation */
+       background-repeat:no-repeat;
+       background-position:center;
+   }
+   #WEToTop {
+   	position:fixed !important;
+   	z-index:99999 !important;
+   }
+   #WEToTop:not(.c-visible) {
+   	bottom:-35px !important;
+   	opacity:0;
+   }
+   
+   .BtnLarsene{
+    	transition: background-color 1s, color 1s;
+   	width:150px;
+   	height:30px;
+   	cursor:pointer;
+   }
+   
+   .BtnLarsene .content{
+   	position: relative;
+   	top: 50%;
+   	-webkit-transform: translateY(-50%);
+   	-ms-transform: translateY(-50%);
+   	transform: translateY(-50%);
+   }
+   
+   .BtnLarsene .bloc{
+   	text-align:center;
+   }
+   
+   a.BtnLarsene {
+       position: absolute;
+       width: 100%;
+       height: 100%;
+       top: 0;
+       left: 0;
+       text-decoration: none;
+       z-index: 10;
+       background-color: white;
+       opacity: 0;
+       filter: alpha(opacity=0);
+   }
+   /*pas de ligne sur les blocs de formulaire*/
+   input[type="text"]:focus {
+   	outline:none;
+   }
+   
+   a {
+      outline:0;
+   }
+   
+   input[type="text"]:focus, textarea:focus{
+    outline:none;
+   }
+   
+   /* transition effect */
+   .transitions, .transitions a {
+   	-webkit-transition: all 1s ease;
+   	-moz-transition: all 1s ease;
+   	-o-transition: all 1s ease;
+   	transition:	all 1s ease;
+   }
+   
+   #WEe0d1b8c5f5 {
+   	z-index:99999 !important;
+   }
+   
+   #WEb2da86c755 {
+   	z-index:99999 !important;
+   }
+   
+   #WEToTop {
+   	position:fixed !important;
+   	z-index:99999 !important;
+   }
+   #WEToTop:not(.c-visible) {
+   	bottom:-35px !important;
+   	opacity:0;
+   }
+  </style>
+  <!-- Preloader -->
+  <div id="preloader">
+      <div id="status">&nbsp;</div>
+  </div>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
+  <link type="text/css" rel="stylesheet" href="Files/Other/btscroll/returnOnTop.css" media="all" />
+  <script type="text/javascript" src="Files/Other/btscroll/returnOnTop.js"></script>
+  <script type="text/javascript">
+   $(function(){
+   	
+   	// Button "Back to top of the page" / Bouton "Vers le haut de la page"
+   
+   	$('body').prepend('<a name="page-top" id="page-top">'); // create anchor at the page top
+       
+   	$(window).on('scroll', function(){
+   		$('#WEToTop').toggleClass('c-visible', ($(window).scrollTop() > 100)); // show the button if vertical scroll is at least 100px
+   	}).trigger('scroll'); // update on opening the page	
+   	
+   });
+  </script>
+ </head>
+ <body class="RWAuto" data-gl="{&quot;KeywordsHomeNotInherits&quot;:false}">
+  <form id="XForm" method="post" action="#"></form>
+  <div id="XBody" class="BaseDiv RBoth OEPageXbody OESK_XBody_Default" style="z-index:2000">
+   <div class="OESZ OESZ_DivContent OESZG_XBody">
+    <div class="OESZ OESZ_XBodyContent OESZG_XBody OECT OECT_Content OECTRel">
+     <div class="OERelLine OEHAlignC OEVAlignT">
+      <div id="WEb2da86c755" class="BaseDiv RBoth OEWEPanel OESK_WEPanel_Default" style="z-index:2001">
+       <div class="OESZ OESZ_DivContent OESZG_WEb2da86c755">
+        <div class="OECT OECT_Content OECTRel OEDynTag0" style="overflow:hidden">
+         <div class="OERelLine OEHAlignC OEVAlignT">
+          <div id="WE191de100e0" class="BaseDiv RBoth OEWEPanel OESK_WEPanel_Default" style="z-index:2001">
+           <div class="OESZ OESZ_DivContent OESZG_WE191de100e0">
+            <div class="OECT OECT_Content OECTRel OEDynTag0" style="overflow:hidden">
+             <div class="OERelLine OEHAlignC OEVAlignM">
+              <div id="WE70630d820c" class="BaseDiv RHeight OEEGdfb2de80 OESK_EGdfb2de80_Default  BtnLarsene" style="z-index:2002">
+               <div class="OESZ OESZ_DivContent OESZG_WE70630d820c">
+                <div class="content">
+                	<div class="bloc">
+                		Passion River Model
+	</div>
+</div>
+               </div>
+              </div><div id="WEe878196d91" class="BaseDiv RBoth OEEGdfb2de80 OESK_EGdfb2de80_Default OEGo  BtnLarsene" style="z-index:2005">
+               <div class="OESZ OESZ_DivContent OESZG_WEe878196d91">
+                <div class="content">
+                	<div class="bloc">
+                		CONTACT
+	</div>
+</div>
+               </div>
+              </div><div id="WE3ef2c126cd" class="BaseDiv RBoth OEEGdfb2de80 OESK_EGdfb2de80_Default OEGo  BtnLarsene" style="z-index:2004">
+               <div class="OESZ OESZ_DivContent OESZG_WE3ef2c126cd">
+                <div class="content">
+                	<div class="bloc">
+                		Articles
+	</div>
+</div>
+               </div>
+              </div><div id="WE64e53cf2c0" class="BaseDiv RBoth OEEGdfb2de80 OESK_EGdfb2de80_Default OEGo OEGd  BtnLarsene" style="z-index:2004">
+               <div class="OESZ OESZ_DivContent OESZG_WE64e53cf2c0">
+                <div class="content">
+                	<div class="bloc">
+                		Yes
+	</div>
+</div>
+               </div>
+              </div><div id="WE1778ea6c8e" class="BaseDiv RBoth OEEGdfb2de80 OESK_EGdfb2de80_Default  BtnLarsene" style="z-index:2004">
+               <div class="OESZ OESZ_DivContent OESZG_WE1778ea6c8e">
+                <div class="content">
+                	<div class="bloc">
+                		About
+	</div>
+</div>
+               </div>
+              </div>
+             </div>
+            </div>
+           </div>
+          </div>
+         </div>
+        </div>
+       </div>
+      </div><div id="WEe0d1b8c5f5" class="BaseDiv RWidth OEWEPanel OESK_WEPanel_Default" style="z-index:2002">
+       <div class="OESZ OESZ_DivContent OESZG_WEe0d1b8c5f5">
+        <div class="OECT OECT_Content OECTRel OEDynTag0" style="overflow:hidden">
+         <div class="OERelLine OEHAlignC OEVAlignT">
+          <div id="WE12cbb46375" class="BaseDiv RBoth OEWEPanel OESK_WEPanel_Default" style="z-index:2001">
+           <div class="OESZ OESZ_DivContent OESZG_WE12cbb46375">
+            <div class="OECT OECT_Content OECTRel OEDynTag0" style="overflow:hidden">
+             <div class="OERelLine OEHAlignC OEVAlignB">
+              <div id="WE60661bfe48" class="BaseDiv RBoth OEEGdfb2de80 OESK_EGdfb2de80_Default OEGo  BtnLarsene" style="z-index:2004">
+               <div class="OESZ OESZ_DivContent OESZG_WE60661bfe48">
+                <div class="content">
+                	<div class="bloc">
+                		EN
+	</div>
+</div>
+               </div>
+              </div><div id="WE3770017b66" class="BaseDiv RBoth OEEGdfb2de80 OESK_EGdfb2de80_Default OEGo  BtnLarsene" style="z-index:2004">
+               <div class="OESZ OESZ_DivContent OESZG_WE3770017b66">
+                <div class="content">
+                	<div class="bloc">
+                		FR
+	</div>
+</div>
+               </div>
+              </div><div id="WEMENUMOBILE" class="BaseDiv RBoth OEEG98fd1859 OESK_EG98fd1859_Default" style="z-index:2004">
+               <div class="OESZ OESZ_DivContent OESZG_WEMENUMOBILE">
+                <link rel='stylesheet prefetch' href='http://netdna.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.css'>
+                <style>
+                /* Circle - default */
+                .icon-MicroVinc-bars {
+	background-color: ;
+	border-radius: 0px; /* Arrondir les angles */
+	cursor: pointer;
+	display: inline-block;
+	font-size: 120px;  /* Taille font du logo si pb : html {font-size: 10px;} */
+	height:  200px;
+	width:  200px;
+	line-height:  200px;
+	position: relative;
+	text-align: center;
+	-webkit-user-select: none;
+	   -moz-user-select: none;
+	    -ms-user-select: none;
+	        user-select: none;
+}
+/* Animation txt */
+.icon-MicroVinc-bars span {
+	font-size: 12px;
+	border-radius: 0;
+	display: block;
+	height: 0;
+	width: 0;
+	top: 50%;
+	left: 50%;
+	margin: 0;
+	position: absolute;
+	-webkit-transition: all 0.5s;
+	   -moz-transition: all 0.5s;
+	     -o-transition: all 0.5s;
+	        transition: all 0.5s;
+}
+/* Animation txt */	
+.icon-MicroVinc-bars:hover span {
+	font-size: 0px;
+	width:  200px;
+	height:  200px;
+	/* margin: -97px; */
+	margin:-100px;
+	border-radius: 0px;
+}
+/* Background color - mouse over */	
+.bars span {
+	background-color: ;
+}
+/* Circle - animation */
+.icon-MicroVinc-bars i {
+	background: none;
+	color: white;
+	height:  200px;
+	width:  200px;
+	line-height:  200px;
+	top: 0;
+	left: 0;
+	position: absolute;
+	-webkit-transition: all 0.5s;
+	   -moz-transition: all 0.5s;
+	     -o-transition: all 0.5s;
+	        transition: all 0.5s;
+	z-index: 10000;
+}
+/* Couleur font - default */	
+.icon-MicroVinc-bars .fa-bars {
+	color: #FFFFFF;
+}
+/* Couleur font - mouse over */
+.icon-MicroVinc-bars:hover .fa-bars {
+	color: #C00000;
+}
+</style>
+<a href="" target="_blank" class="icon-MicroVinc-bars bars"><i class="fa fa-bars fa-No_Anim_It"></i>
+	<span></span>
+</a>
+               </div>
+              </div><div id="WEdc4bc0ad12" class="BaseDiv RBoth OEEGdfb2de80 OESK_EGdfb2de80_Default  BtnLarsene" style="z-index:2004">
+               <div class="OESZ OESZ_DivContent OESZG_WEdc4bc0ad12">
+                <div class="content">
+                	<div class="bloc">
+                		SENSLIGHT
+	</div>
+</div>
+               </div>
+              </div>
+             </div>
+            </div>
+           </div>
+          </div>
+         </div>
+        </div>
+       </div>
+      </div>
+     </div>
+    </div>
+    <div id="WE1ca6c04797" class="BaseDiv RBoth OEWEMenu OESK_WEMenu_Default  transitions" style="z-index:2001">
+     <div class="OESZ OESZ_DivContent OESZG_WE1ca6c04797">
+      <div class="OESZ OESZ_WEMenuGroup OESZG_WE1ca6c04797" style="display:none" id="WEMenud20d99">
+       <div class="OESZ OESZ_WEMenuTop OESZG_WE1ca6c04797"></div>
+       <div class="OESZ OESZ_WEMenuItem OESZG_WE1ca6c04797 OEo" id="WEMenub25f03">
+        <table onclick="return OE.Navigate.open(event,'../galerie-free.htm',1)" style="border-spacing: 0px; border-collapse: collapse;" class="OESZ OESZ_WEMenuItemTable OESZG_WE1ca6c04797">
+         <tr>
+          <td class="OESZ OESZ_WEMenuText OESZG_WE1ca6c04797 OEo">
+           <a href="../galerie-free.htm">GALERIES</a>
+          </td>
+         </tr>
+        </table>
+       </div>
+       <div class="OESZ OESZ_WEMenuItem OESZG_WE1ca6c04797 OEo" id="WEMenua5f134">
+        <table onclick="return OE.Navigate.open(event,'../article-interne.php',1)" style="border-spacing: 0px; border-collapse: collapse;" class="OESZ OESZ_WEMenuItemTable OESZG_WE1ca6c04797">
+         <tr>
+          <td class="OESZ OESZ_WEMenuText OESZG_WE1ca6c04797 OEo">
+           <a href="../article-interne.php">ARTICLE INTERNE</a>
+          </td>
+         </tr>
+        </table>
+       </div>
+       <div class="OESZ OESZ_WEMenuItem OESZG_WE1ca6c04797 OEo" id="WEMenuf83a92">
+        <table onclick="return OE.Navigate.open(event,'../page-interne.php',1)" style="border-spacing: 0px; border-collapse: collapse;" class="OESZ OESZ_WEMenuItemTable OESZG_WE1ca6c04797">
+         <tr>
+          <td class="OESZ OESZ_WEMenuText OESZG_WE1ca6c04797 OEo">
+           <a href="../page-interne.php">PAGE INTERNE</a>
+          </td>
+         </tr>
+        </table>
+       </div>
+       <div class="OESZ OESZ_WEMenuItem OESZG_WE1ca6c04797 OEo" id="WEMenu8b0f2f">
+        <table onclick="return OE.Navigate.open(event,'../bloc-interne.htm',1)" style="border-spacing: 0px; border-collapse: collapse;" class="OESZ OESZ_WEMenuItemTable OESZG_WE1ca6c04797">
+         <tr>
+          <td class="OESZ OESZ_WEMenuText OESZG_WE1ca6c04797 OEo">
+           <a href="../bloc-interne.htm">BLOC INTERNE</a>
+          </td>
+         </tr>
+        </table>
+       </div>
+       <div class="OESZ OESZ_WEMenuItem OESZG_WE1ca6c04797 OEo" id="WEMenu7419f0">
+        <table onclick="return OE.Navigate.open(event,'../livre-d-or.php',1)" style="border-spacing: 0px; border-collapse: collapse;" class="OESZ OESZ_WEMenuItemTable OESZG_WE1ca6c04797">
+         <tr>
+          <td class="OESZ OESZ_WEMenuText OESZG_WE1ca6c04797 OEo">
+           <a href="../livre-d-or.php">LIVRE D'OR</a>
+          </td>
+         </tr>
+        </table>
+       </div>
+       <div class="OESZ OESZ_WEMenuItem OESZG_WE1ca6c04797 OEo" id="WEMenu15a1ec">
+        <table onclick="return OE.Navigate.open(event,'http://sensode.net/livre-dor.php',1)" style="border-spacing: 0px; border-collapse: collapse;" class="OESZ OESZ_WEMenuItemTable OESZG_WE1ca6c04797">
+         <tr>
+          <td class="OESZ OESZ_WEMenuText OESZG_WE1ca6c04797 OEo">
+           <a href="http://sensode.net/livre-dor.php">LIVRE D'OR 2</a>
+          </td>
+         </tr>
+        </table>
+       </div>
+       <div class="OESZ OESZ_WEMenuItem OESZG_WE1ca6c04797 OEo" id="WEMenu13b368">
+        <table onclick="return OE.Navigate.open(event,'../contact.htm',1)" style="border-spacing: 0px; border-collapse: collapse;" class="OESZ OESZ_WEMenuItemTable OESZG_WE1ca6c04797">
+         <tr>
+          <td class="OESZ OESZ_WEMenuText OESZG_WE1ca6c04797 OEo">
+           <a href="../contact.htm">CONTACT</a>
+          </td>
+         </tr>
+        </table>
+       </div>
+       <div class="OESZ OESZ_WEMenuItem OESZG_WE1ca6c04797 OEo" id="WEMenu5ff5dc">
+        <table onclick="return OE.Navigate.open(event,'../achat.htm',1)" style="border-spacing: 0px; border-collapse: collapse;" class="OESZ OESZ_WEMenuItemTable OESZG_WE1ca6c04797">
+         <tr>
+          <td class="OESZ OESZ_WEMenuText OESZG_WE1ca6c04797 OEo">
+           <a href="../achat.htm">VERSION COMPLETE</a>
+          </td>
+         </tr>
+        </table>
+       </div>
+       <div class="OESZ OESZ_WEMenuBottom OESZG_WE1ca6c04797"></div>
+      </div>
+     </div>
+    </div>
+    <div id="WE6954202253" class="BaseDiv RBoth OEWEMenu OESK_WEMenu_Default  transitions" style="z-index:2005">
+     <div class="OESZ OESZ_DivContent OESZG_WE6954202253">
+      <div class="OESZ OESZ_WEMenuGroup OESZG_WE6954202253" style="display:none" id="WEMenud20d99">
+       <div class="OESZ OESZ_WEMenuTop OESZG_WE6954202253"></div>
+       <div class="OESZ OESZ_WEMenuItem OESZG_WE6954202253 OEo" id="WEMenuc09d4d">
+        <table onclick="return OE.Navigate.open(event,'../index.htm',1)" style="border-spacing: 0px; border-collapse: collapse;" class="OESZ OESZ_WEMenuItemTable OESZG_WE6954202253">
+         <tr>
+          <td class="OESZ OESZ_WEMenuText OESZG_WE6954202253 OEo">
+           <a href="../index.htm">ACCUEIL</a>
+          </td>
+         </tr>
+        </table>
+       </div>
+       <div class="OESZ OESZ_WEMenuItem OESZG_WE6954202253 OEo" id="WEMenu172e31">
+        <table style="border-spacing: 0px; border-collapse: collapse;" class="OESZ OESZ_WEMenuItemTable OESZG_WE6954202253">
+         <tr>
+          <td class="OESZ OESZ_WEMenuText OESZG_WE6954202253 OEo">
+           <a href="">PAGES</a>
+          </td>
+         </tr>
+        </table>
+       </div>
+       <div class="OESZ OESZ_WEMenuItem OESZG_WE6954202253 OEo" id="WEMenu2c1cdf">
+        <table onclick="return OE.Navigate.open(event,'../article-interne.php',1)" style="border-spacing: 0px; border-collapse: collapse;" class="OESZ OESZ_WEMenuItemTable OESZG_WE6954202253">
+         <tr>
+          <td style="width:1px">
+           <a href="../article-interne.php">
+            <img src="../Files/Image/BLOC-TRANSPARENT.png" class="OESZ OESZ_WEMenuIcon OESZG_WE6954202253" alt="ARTICLE INTERNE" />
+           </a>
+          </td>
+          <td class="OESZ OESZ_WEMenuText OESZG_WE6954202253 OEo">
+           <a href="../article-interne.php">ARTICLE INTERNE</a>
+          </td>
+         </tr>
+        </table>
+       </div>
+       <div class="OESZ OESZ_WEMenuItem OESZG_WE6954202253 OEo" id="WEMenudef559">
+        <table onclick="return OE.Navigate.open(event,'../page-interne.php',1)" style="border-spacing: 0px; border-collapse: collapse;" class="OESZ OESZ_WEMenuItemTable OESZG_WE6954202253">
+         <tr>
+          <td style="width:1px">
+           <a href="../page-interne.php">
+            <img src="../Files/Image/BLOC-TRANSPARENT.png" class="OESZ OESZ_WEMenuIcon OESZG_WE6954202253" alt="PAGE INTERNE" />
+           </a>
+          </td>
+          <td class="OESZ OESZ_WEMenuText OESZG_WE6954202253 OEo">
+           <a href="../page-interne.php">PAGE INTERNE</a>
+          </td>
+         </tr>
+        </table>
+       </div>
+       <div class="OESZ OESZ_WEMenuItem OESZG_WE6954202253 OEo" id="WEMenu9625ff">
+        <table onclick="return OE.Navigate.open(event,'../bloc-interne.htm',1)" style="border-spacing: 0px; border-collapse: collapse;" class="OESZ OESZ_WEMenuItemTable OESZG_WE6954202253">
+         <tr>
+          <td style="width:1px">
+           <a href="../bloc-interne.htm">
+            <img src="../Files/Image/BLOC-TRANSPARENT.png" class="OESZ OESZ_WEMenuIcon OESZG_WE6954202253" alt="BLOC INTERNE" />
+           </a>
+          </td>
+          <td class="OESZ OESZ_WEMenuText OESZG_WE6954202253 OEo">
+           <a href="../bloc-interne.htm">BLOC INTERNE</a>
+          </td>
+         </tr>
+        </table>
+       </div>
+       <div class="OESZ OESZ_WEMenuItem OESZG_WE6954202253 OEo" id="WEMenud07661">
+        <table onclick="return OE.Navigate.open(event,'../galerie-free.htm',1)" style="border-spacing: 0px; border-collapse: collapse;" class="OESZ OESZ_WEMenuItemTable OESZG_WE6954202253">
+         <tr>
+          <td style="width:1px">
+           <a href="../galerie-free.htm">
+            <img src="../Files/Image/BLOC-TRANSPARENT.png" class="OESZ OESZ_WEMenuIcon OESZG_WE6954202253" alt="GALERIES" />
+           </a>
+          </td>
+          <td class="OESZ OESZ_WEMenuText OESZG_WE6954202253 OEo">
+           <a href="../galerie-free.htm">GALERIES</a>
+          </td>
+         </tr>
+        </table>
+       </div>
+       <div class="OESZ OESZ_WEMenuItem OESZG_WE6954202253 OEo" id="WEMenub257fd">
+        <table onclick="return OE.Navigate.open(event,'../livre-d-or.php',1)" style="border-spacing: 0px; border-collapse: collapse;" class="OESZ OESZ_WEMenuItemTable OESZG_WE6954202253">
+         <tr>
+          <td style="width:1px">
+           <a href="../livre-d-or.php">
+            <img src="../Files/Image/BLOC-TRANSPARENT.png" class="OESZ OESZ_WEMenuIcon OESZG_WE6954202253" alt="LIVRE D'OR" />
+           </a>
+          </td>
+          <td class="OESZ OESZ_WEMenuText OESZG_WE6954202253 OEo">
+           <a href="../livre-d-or.php">LIVRE D'OR</a>
+          </td>
+         </tr>
+        </table>
+       </div>
+       <div class="OESZ OESZ_WEMenuItem OESZG_WE6954202253 OEo" id="WEMenuc03c6a">
+        <table onclick="return OE.Navigate.open(event,'http://sensode.net/livre-dor.php',1)" style="border-spacing: 0px; border-collapse: collapse;" class="OESZ OESZ_WEMenuItemTable OESZG_WE6954202253">
+         <tr>
+          <td style="width:1px">
+           <a href="http://sensode.net/livre-dor.php">
+            <img src="../Files/Image/BLOC-TRANSPARENT.png" class="OESZ OESZ_WEMenuIcon OESZG_WE6954202253" alt="LIVRE D'OR 2" />
+           </a>
+          </td>
+          <td class="OESZ OESZ_WEMenuText OESZG_WE6954202253 OEo">
+           <a href="http://sensode.net/livre-dor.php">LIVRE D'OR 2</a>
+          </td>
+         </tr>
+        </table>
+       </div>
+       <div class="OESZ OESZ_WEMenuItem OESZG_WE6954202253 OEo" id="WEMenu13b368">
+        <table onclick="return OE.Navigate.open(event,'../contact.htm',1)" style="border-spacing: 0px; border-collapse: collapse;" class="OESZ OESZ_WEMenuItemTable OESZG_WE6954202253">
+         <tr>
+          <td class="OESZ OESZ_WEMenuText OESZG_WE6954202253 OEo">
+           <a href="../contact.htm">CONTACT</a>
+          </td>
+         </tr>
+        </table>
+       </div>
+       <div class="OESZ OESZ_WEMenuItem OESZG_WE6954202253 OEo" id="WEMenucff2a9">
+        <table onclick="return OE.Navigate.open(event,'../achat.htm',1)" style="border-spacing: 0px; border-collapse: collapse;" class="OESZ OESZ_WEMenuItemTable OESZG_WE6954202253">
+         <tr>
+          <td class="OESZ OESZ_WEMenuText OESZG_WE6954202253 OEo">
+           <a href="../achat.htm">VERSION COMPLETE</a>
+          </td>
+         </tr>
+        </table>
+       </div>
+       <div class="OESZ OESZ_WEMenuBottom OESZG_WE6954202253"></div>
+      </div>
+     </div>
+    </div>
+   </div>
+  </div>
+  <script type="text/javascript">
+   (function(){
+   
+   	var tID = null;
+   	
+   	$('#status').css('background-image', 'url("' + $('#PRELOADIMG').find('img').attr('src') + '")');
+   	
+   	function onContentLoaded() {
+   		// call only once:
+   		$(window).off('load.oePreloader');
+   		clearTimeout(tID);
+   		
+   		// remove preloader:
+   		$('#status').fadeOut(); // will first fade out the loading animation
+   		$('#preloader').delay(250).fadeOut('slow'); // will fade out the white DIV that covers the website.
+   		$('body').css({'overflow':'visible'});
+   	}
+   	
+   	$(function(){
+   		var tID = setTimeout(onContentLoaded, 7000); // wait max 7 seconds after the page structure is loaded
+   	})
+   	$(window).on('load.oePreloader', onContentLoaded); // make sure the whole site is loaded
+   
+   })();
+   $(function(){ EGdfb2de80.Init(); });
+   
+   var EGdfb2de80 = {
+   
+   	Init: function() {
+   		if (OEConfEGdfb2de80 === undefined) return;
+   		var allElements = OEConfEGdfb2de80;
+   
+   		for(var ID in allElements) {
+   			var $el = $('#'+ID); // le tag <div> principale de l'élément
+   			var properties = allElements[ID]; // les propriétés de l'élément disponibles pour JS
+   			this.InitElement(ID, $el, properties);
+   		}
+   	},
+   
+   	InitElement: function(ID, $el, properties) {
+   		
+   		// VOTRE CODE ICI
+   		
+   		// exemples:
+   		// var elWd = parseInt($el.width()); // obtenir la largeur de l'element
+   		// var bgIm = $el.find('.OESZ_Zone1').css('background-image'); // obtenir l'image de fond de la Zone de style 'Zone1'
+   		// 
+   		// 
+   		
+   		var $IDCible = $('#'+properties.Id)
+   		$($el).click(function() {
+   			var link = WEEdSiteCommon.LinkGetPath(properties.Link);
+   			if (link) {
+   				document.location.href = link;
+   			} else if ($IDCible && $IDCible.length) {
+   				$.scrollTo($IDCible,800,{offset: {top:properties.Verticaloffset, left:properties.Horizontaloffset}} )
+   			}
+   		});
+   		
+   	}
+   
+   };
+   
+   
+   
+   
+   
+   
+   
+   $(["../Files/Image/top-actif.png"]).preloadImg();
+  </script>
+  <script src="https://cdn.jsdelivr.net/scrollreveal.js/3.3.1/scrollreveal.min.js"></script>
+  <script type="text/javascript">
+  $(function(){// Scroll reveal (apparition au scroll) :
+  	(new ScrollReveal()).reveal('.apply-smoove', { duration: 1000, distance: '500px', viewFactor: 0.025 });
+  });
+  </script>
+ </body>
+</html>

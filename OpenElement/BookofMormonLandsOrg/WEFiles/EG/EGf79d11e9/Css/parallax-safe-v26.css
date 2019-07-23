@@ -1,0 +1,10 @@
+.oepr-parallax {
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size: cover;
+}
+
+.oepr-parallax.is-ios {
+	background-attachment: scroll !important;
+}
