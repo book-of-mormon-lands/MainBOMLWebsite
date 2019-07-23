@@ -1,0 +1,9 @@
+@font-face {
+font-family: "FontAwesome Regular";
+src: url("FontAwesome Regular.eot") format("eot"); /* IE9 Compat Modes */
+src: url("FontAwesome Regular.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
+     url("FontAwesome Regular.woff") format("woff"), /* Modern Browsers */
+     url("FontAwesome Regular.ttf") format("truetype"); /* Safari, Android, iOS */
+font-weight: normal;
+font-style: normal;
+}
