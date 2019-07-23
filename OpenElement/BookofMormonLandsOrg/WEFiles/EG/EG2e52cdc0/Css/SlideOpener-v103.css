@@ -1,0 +1,39 @@
+.oeso-slider {
+	overflow:		hidden;
+}
+.oeso-slider:not(.oeso-open) {
+	max-height:		0 !important;
+	overflow:		hidden !important;
+}
+/*
+.oeso-slider:not(.oeso-open):not(.oeso-no-anim) {
+	-webkit-transition: max-height 0.5s ease-out;
+	transition: max-height 0.5s ease-out;
+}
+.oeso-slider.oeso-open:not(.oeso-no-anim) {
+	-webkit-transition: max-height 0.5s ease-in;
+	transition: max-height 0.5s ease-in;
+}
+*/
+.oeso-slider:not(.oeso-no-anim) {
+	-webkit-transition: max-height 0.5s ease;
+	transition: max-height 0.5s ease;
+}
+
+.oeso-slider.oeso-open:not(.oeso-no-anim), 
+.oeso-slider.oeso-open.oeso-start-anim {
+	max-height:		200vh;
+}
+.oeso-slider.oeso-open.oeso-no-anim {
+	max-height:		none;
+}
+
+.oeso-slider:not(.oeso-no-anim) > div, 
+.oeso-slider:not(.oeso-no-anim) > div > div, 
+.oeso-slider:not(.oeso-no-anim) > div > div > div {
+	overflow: hidden !important; /* to avoid scrollbars appearing */
+}
+
+.oeso-trigger {
+	cursor: pointer;
+}

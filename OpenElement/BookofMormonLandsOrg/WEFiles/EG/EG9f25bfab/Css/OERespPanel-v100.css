@@ -1,0 +1,50 @@
+.oerp-autosize {
+	width: 100% !important;
+	height: auto !important;
+}
+
+.oerp-autosize > .OESZ_DivContent,
+.oerp-autosize > .OESZ_DivContent .OECT_OuterContent {
+	height: auto;
+}
+
+.oerp-autosize > .OESZ_DivContent .OECT_OuterContent > .BaseDiv.oerp-inner-content {
+	position:	relative !important;
+	left: auto !important;
+	right: auto !important;
+	top: auto !important;
+	bottom: auto !important;
+	
+	margin-left: auto;
+	margin-right: auto;
+	z-index:	2000 !important;
+}
+
+.oerp-warning {
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	-webkit-transform: translate(-50%, -50%);
+}
+
+/* Fixed (parallax) content: */
+
+.oerp-autosize.oerp-fixed-content {
+	z-index: 0 !important;
+}
+
+.oerp-autosize > .OESZ_DivContent .OECT_OuterContent > .BaseDiv.oerp-inner-content.oerp-fixed-content {
+	z-index: 1 !important;
+}
+
+.oerp-autosize > .OESZ_DivContent .OECT_OuterContent > .BaseDiv.oerp-inner-content.oerp-fixed-content > .OESZ_DivContent {
+	z-index: 1; /* Modified in JS according to XBody z-index */
+	position: fixed !important;
+	left: 50% !important;
+	top: 50% !important;
+	width: 0; /* set in JS */
+	height: 0;
+	-webkit-transform: translate(-50%, -50%);
+		-ms-transform: translate(-50%, -50%);
+			transform: translate(-50%, -50%);
+}
